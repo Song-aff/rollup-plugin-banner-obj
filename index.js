@@ -8,17 +8,12 @@ function Objbanner () {
       footerObj = options.output.footerObj
     },
     generateBundle: function (options, bundle, isWrite) {
-      if (Object.keys(bannerObj).length > 0) {
         Object.keys(bannerObj).forEach(e => {
-          bundle[e] && (bundle[e].code = `${bannerObj[e]}\n${bundle[e].code}`)
+          bundle[e] && (bundle[e].code = bannerObj[e]+'\n'+bundle[e].code)
         })
-      }
-      if (Object.keys(footerObj).length > 0) {
         Object.keys(footerObj).forEach(e => {
-          bundle[e] && (bundle[e].code = `${bundle[e].code}${footerObj[e]} \n`)
+          bundle[e] && (bundle[e].code = bundle[e].code+footerObj[e]+'\n')
         })
-      }
-      
     }
   }
 }
