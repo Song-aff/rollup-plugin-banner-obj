@@ -1,0 +1,20 @@
+{
+  "name": "rollup-plugin-banner-obj",
+  "version": "0.0.1-beta.0",
+  "description": "you can specify the banner&amp;footer to be set for the specified chunk",
+  "main": "index.js",
+  "files": ["index.js"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Song-aff/rollup-plugin-banner-obj.git"
+  },
+  "author": "songpengfei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Song-aff/rollup-plugin-banner-obj/issues"
+  },
+  "homepage": "https://github.com/Song-aff/rollup-plugin-banner-obj#readme"
+}
