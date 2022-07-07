@@ -1,4 +1,4 @@
-export default function () {
+function Objbanner () {
     let bannerObj = {}
     let footerObj = {}
     return {
@@ -17,4 +17,4 @@ export default function () {
       }
     }
   }
-  
+  exports.Objbanner = Objbanner;

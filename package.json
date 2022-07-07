@@ -3,6 +3,7 @@
   "version": "0.0.1-beta.0",
   "description": "you can specify the banner&amp;footer to be set for the specified chunk",
   "main": "index.js",
+  "type": "commonjs",
   "files": ["index.js"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
