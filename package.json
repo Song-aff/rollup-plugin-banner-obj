@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-banner-obj",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "you can specify the banner&amp;footer to be set for the specified chunk",
   "main": "index.js",
   "type": "commonjs",
