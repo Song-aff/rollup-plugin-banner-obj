@@ -1,11 +1,11 @@
-function Objbanner () {
+function objBanner (props={}) {
   let bannerObj = {}
   let footerObj = {}
   return {
     name: 'banner-obj', 
     options: function (options) {
-      bannerObj = options.output.bannerObj||{}
-      footerObj = options.output.footerObj||{}
+      bannerObj = props.banner||options.output.bannerObj||{}
+      footerObj = props.footer||options.output.footerObj||{}
     },
     generateBundle: function (options, bundle, isWrite) {
         Object.keys(bannerObj).forEach(e => {
@@ -17,4 +17,6 @@ function Objbanner () {
     }
   }
 }
-exports.Objbanner = Objbanner;
+exports.objBanner = objBanner;
+// 兼容之前写法
+exports.Objbanner = objBanner;
